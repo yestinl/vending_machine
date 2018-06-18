@@ -1,0 +1,57 @@
+/*
+ * get_number_cubic.c
+ *
+ *  Created on: 2018Äê6ÔÂ17ÈÕ
+ *      Author: 18577
+ */
+
+void GetOneBlue(void)
+{
+
+}
+void GetTwoBlue(void)
+{
+
+}
+void GetOneRed(void)
+{
+
+}
+void GetTwoRed(void)
+{
+
+}
+void GetOneGreen(void)
+{
+
+}
+void GetTwoGreen(void)
+{
+
+}
+void GetOnePurple(void)
+{
+
+}
+void GetTwoPurple(void)
+{
+
+}
+void GetOneYellow(void)
+{
+
+}
+void GetTwoYellow(void)
+{
+
+}
+void GetOnePink(void)
+{
+
+}
+void GetTwoPink(void)
+{
+
+}
+
+

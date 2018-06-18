@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sun May 27 22:55:39 2018
+# Process ID: 13204
+# Current directory: D:/sort_fin/sort_fin
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7880 D:\sort_fin\sort_fin\sort_fin.xpr
+# Log file: D:/sort_fin/sort_fin/vivado.log
+# Journal file: D:/sort_fin/sort_fin\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/sort_fin/sort_fin/sort_fin.xpr
+INFO: [Project 1-313] Project file moved from 'D:/sort_fin' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/Vivado/2017.2/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 702.855 ; gain = 82.789
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun May 27 23:20:07 2018...

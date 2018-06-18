@@ -1,0 +1,30 @@
+
+**** Build of configuration Debug for project interrupts_test ****
+
+"D:\\Ti\\CCS\\ccsv7\\utils\\bin\\gmake" -k all 
+ 
+'Building file: "../interrupts.c"'
+'Invoking: ARM Compiler'
+"D:/Ti/CCS/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 --include_path="D:/Ti/CCS/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --include_path="D:/project/ccs/union_work/interrupts_test" --include_path="D:/Ti/TivaWare_C_Series-2.1.4.178/examples/boards/ek-tm4c1294xl" --include_path="D:/Ti/TivaWare_C_Series-2.1.4.178" --advice:power=all -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --ual --preproc_with_compile --preproc_dependency="interrupts.d_raw"  "../interrupts.c"
+"../interrupts.c", line 168: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../interrupts.c", line 230: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../interrupts.c", line 232: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../interrupts.c", line 237: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../interrupts.c", line 244: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../interrupts.c", line 232: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../interrupts.c", line 260: warning #179-D: variable "ui32Temp" was declared but never referenced
+"../interrupts.c", line 261: warning #179-D: variable "pcBuffer" was declared but never referenced
+"../interrupts.c", line 728: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+'Finished building: "../interrupts.c"'
+ 
+'Building target: "interrupts_test.out"'
+'Invoking: ARM Linker'
+"D:/Ti/CCS/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 --advice:power=all -g --gcc --define=ccs="ccs" --define=PART_TM4C1294NCPDT --define=TARGET_IS_TM4C129_RA0 --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --ual -z -m"interrupts_ccs.map" --stack_size=512 --heap_size=0 -i"D:/Ti/CCS/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/lib" -i"D:/Ti/CCS/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="interrupts_test_linkInfo.xml" --rom_model -o "interrupts_test.out" "./interrupts.obj" "./startup_ccs.obj" "./drivers/pinout.obj" "./utils/uartstdio.obj" "../interrupts_ccs.cmd"  -llibc.a -l"D:/Ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+'Finished building target: "interrupts_test.out"'
+ 
+"D:/Ti/CCS/ccsv7/utils/tiobj2bin/tiobj2bin" "interrupts_test.out" "interrupts_test.bin" "D:/Ti/CCS/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armofd" "D:/Ti/CCS/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armhex" "D:/Ti/CCS/ccsv7/utils/tiobj2bin/mkhex4bin"
+ 
+
+**** Build Finished ****

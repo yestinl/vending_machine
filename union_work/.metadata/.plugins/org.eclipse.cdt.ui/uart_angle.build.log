@@ -1,0 +1,23 @@
+
+**** Build of configuration Debug for project uart_angle ****
+
+"D:\\Ti\\CCS\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../tm4c1294ncpdt_startup_ccs.c"'
+'Invoking: ARM Compiler'
+"D:/Ti/CCS/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/Ti/TivaWare_C_Series-2.1.4.178" --include_path="D:/Ti/CCS/i2c_sensor/uart_angle" --include_path="D:/Ti/CCS/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="tm4c1294ncpdt_startup_ccs.d_raw"  "../tm4c1294ncpdt_startup_ccs.c"
+'Finished building: "../tm4c1294ncpdt_startup_ccs.c"'
+ 
+'Building file: "../main.c"'
+'Invoking: ARM Compiler'
+"D:/Ti/CCS/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/Ti/TivaWare_C_Series-2.1.4.178" --include_path="D:/Ti/CCS/i2c_sensor/uart_angle" --include_path="D:/Ti/CCS/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+'Finished building: "../main.c"'
+ 
+'Building target: "uart_angle.out"'
+'Invoking: ARM Linker'
+"D:/Ti/CCS/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"uart_angle.map" --heap_size=0 --stack_size=512 -i"D:/Ti/CCS/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/lib" -i"D:/Ti/CCS/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="uart_angle_linkInfo.xml" --rom_model -o "uart_angle.out" "./main.obj" "./tm4c1294ncpdt_startup_ccs.obj" "../tm4c1294ncpdt.cmd"  -l"D:/Ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: "uart_angle.out"'
+ 
+
+**** Build Finished ****

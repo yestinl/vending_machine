@@ -1,0 +1,19 @@
+
+**** Build of configuration Debug for project Union_t1 ****
+
+"D:\\Ti\\CCS\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../main.c"'
+'Invoking: ARM Compiler'
+"D:/Ti/CCS/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/project/ccs/union_work/Union_t1" --include_path="D:/Ti/TivaWare_C_Series-2.1.4.178" --include_path="D:/Ti/CCS/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 47: warning #225-D: function "InfraRed_led_read" declared implicitly
+'Finished building: "../main.c"'
+ 
+'Building target: "Union_t1.out"'
+'Invoking: ARM Linker'
+"D:/Ti/CCS/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C1294NCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Union_t1.map" --heap_size=0 --stack_size=512 -i"D:/Ti/CCS/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/lib" -i"D:/Ti/CCS/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Union_t1_linkInfo.xml" --rom_model -o "Union_t1.out" "./GPIOConfiguration.obj" "./InfraRed_led.obj" "./TCS34725_file.obj" "./UARTConfiguration.obj" "./color_judge.obj" "./color_to_servo.obj" "./distance.obj" "./main.obj" "./maintenance_distance.obj" "./maintenance_servo.obj" "./softi2c.obj" "./tm4c1294ncpdt_startup_ccs.obj" "./uartstdio.obj" "./vl6180x_i2c.obj" "../tm4c1294ncpdt.cmd"  -llibc.a -l"D:/Ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+'Finished building target: "Union_t1.out"'
+ 
+
+**** Build Finished ****

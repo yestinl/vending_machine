@@ -1,0 +1,67 @@
+#include <color_to_servo.h>
+#include <stdint.h>
+#include <stdbool.h>
+#include <math.h>
+#include <UARTConfiguration.h>
+#include "inc/hw_memmap.h"
+#include "inc/hw_types.h"
+#include "inc/hw_ints.h"
+#include "inc/hw_i2c.h"
+#include "inc/hw_nvic.h"
+#include "driverlib/gpio.h"
+#include "driverlib/sysctl.h"
+#include "driverlib/pwm.h"
+#include "driverlib/interrupt.h"
+#include "driverlib/timer.h"
+#include "driverlib/uart.h"
+#include "driverlib/pin_map.h"
+#include "driverlib/rom_map.h"
+#include "driverlib/i2c.h"
+#include "driverlib/systick.h"
+#include "driverlib/rom.h"
+#include "driverlib/fpu.h"
+#include "utils/uartstdio.h"
+#include "utils/softi2c.h"
+
+#include "TCS34725_file.h"
+#include "softi2c.h"
+#include "vl6180x_i2c.h"
+#include "distance.h"
+#include "InfraRed_led.h"
+#include "color_judge.h"
+#include "GPIOConfiguration.h"
+
+extern int tran_code;
+
+void Configuration(void)
+{
+    ConfigureUART();
+    configure_GPIOF();
+    configure_GPION();
+    configure_GPIOK();
+    configure_GPIOL();
+    IntConfiguration();
+}
+
+void IntConfiguration(void)
+{
+    IntMasterEnable();
+    IntEnable()
+}
+
+int main(void)
+{
+    Configuration();
+    while(1)
+    {
+        color_to_servo();     //通过物块不同颜色使电机转动到不同位置
+        InfraRed_led_read();
+//        UARTCharPutNonBlocking(UART0_BASE, tran_code);
+//        DelayMS(10000);
+        if(tran_code!=0)
+        {
+            InfraRed_led_transmit();//发送红外传感器读取的卡片编号
+        }
+    }
+}
+

@@ -1,0 +1,89 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CMD_SRCS += \
+../tm4c1294ncpdt.cmd 
+
+C_SRCS += \
+../InfraRed_led.c \
+../TCS34725_file.c \
+../UARTSend.c \
+../color_judge.c \
+../distance.c \
+../main.c \
+../signal_to_servo.c \
+../softi2c.c \
+../tm4c1294ncpdt_startup_ccs.c \
+../uartstdio.c \
+../vl6180x_i2c.c 
+
+C_DEPS += \
+./InfraRed_led.d \
+./TCS34725_file.d \
+./UARTSend.d \
+./color_judge.d \
+./distance.d \
+./main.d \
+./signal_to_servo.d \
+./softi2c.d \
+./tm4c1294ncpdt_startup_ccs.d \
+./uartstdio.d \
+./vl6180x_i2c.d 
+
+OBJS += \
+./InfraRed_led.obj \
+./TCS34725_file.obj \
+./UARTSend.obj \
+./color_judge.obj \
+./distance.obj \
+./main.obj \
+./signal_to_servo.obj \
+./softi2c.obj \
+./tm4c1294ncpdt_startup_ccs.obj \
+./uartstdio.obj \
+./vl6180x_i2c.obj 
+
+OBJS__QUOTED += \
+"InfraRed_led.obj" \
+"TCS34725_file.obj" \
+"UARTSend.obj" \
+"color_judge.obj" \
+"distance.obj" \
+"main.obj" \
+"signal_to_servo.obj" \
+"softi2c.obj" \
+"tm4c1294ncpdt_startup_ccs.obj" \
+"uartstdio.obj" \
+"vl6180x_i2c.obj" 
+
+C_DEPS__QUOTED += \
+"InfraRed_led.d" \
+"TCS34725_file.d" \
+"UARTSend.d" \
+"color_judge.d" \
+"distance.d" \
+"main.d" \
+"signal_to_servo.d" \
+"softi2c.d" \
+"tm4c1294ncpdt_startup_ccs.d" \
+"uartstdio.d" \
+"vl6180x_i2c.d" 
+
+C_SRCS__QUOTED += \
+"../InfraRed_led.c" \
+"../TCS34725_file.c" \
+"../UARTSend.c" \
+"../color_judge.c" \
+"../distance.c" \
+"../main.c" \
+"../signal_to_servo.c" \
+"../softi2c.c" \
+"../tm4c1294ncpdt_startup_ccs.c" \
+"../uartstdio.c" \
+"../vl6180x_i2c.c" 
+
+

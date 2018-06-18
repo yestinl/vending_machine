@@ -1,0 +1,36 @@
+/*
+ * CardTranOnce.c
+ *
+ *  Created on: 2018年6月17日
+ *      Author: 18577
+ */
+
+void CardTranOnce(void)
+{
+    if(prev_code==0)
+    {
+        prev_code = tran_code;
+        if(tran_code!=0)
+        {
+               HWREG(NVIC_SW_TRIG) = INT_GPIOA - 16;
+                //            InfraRed_led_transmit();//发送红外传感器读取的卡片编号
+        }
+    }
+    else
+    {
+        if(prev_code==tran_code)
+               continue;
+        else
+        {
+            prev_code = tran_code;
+            IntEnable(INT_GPIOA);
+            if(tran_code!=0)
+            {
+                HWREG(NVIC_SW_TRIG) = INT_GPIOA - 16;
+            }
+        }
+    }
+}
+
+
+
